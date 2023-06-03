@@ -71,10 +71,10 @@ class insert_fish_details(APIView):
         type = re.sub(' +', ' ',type)
         label = re.sub(' +', ' ',label)
         
-        access_key = 'AKIA2QMGQOEATDA6LQHW'  #os.environ.get('AWS_ACCESS_KEY_ID')
-        access_secret_key = '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'  #os.environ.get('AWS_SECRET_ACCESS_KEY')
-        bucket_name = 'fish-data-collection'  #os.environ.get('AWS_STORAGE_BUCKET_NAME')
-        AWS_S3_CUSTOM_DOMAIN = 'fish-data-collection.s3.ap-south-1.amazonaws.com'  #os.environ.get('AWS_S3_CUSTOM_DOMAIN')
+        access_key = os.environ.get('AWS_ACCESS_KEY_ID')
+        access_secret_key = os.environ.get('AWS_SECRET_ACCESS_KEY')
+        bucket_name = os.environ.get('AWS_STORAGE_BUCKET_NAME')
+        AWS_S3_CUSTOM_DOMAIN = os.environ.get('AWS_S3_CUSTOM_DOMAIN')
         
         client = boto3.resource('s3',
                         aws_access_key_id = access_key,
