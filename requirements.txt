@@ -1,0 +1,13 @@
+configparser==5.2.0
+Django==4.1.7
+django-cors-headers==3.14.0
+django-dotenv==1.4.2
+djangorestframework==3.14.0
+djangorestframework-simplejwt==5.2.2
+boto3==1.26.88
+numpy==1.23.1
+psycopg2-binary
+pandas==1.1.4
+matplotlib==3.5.1
+seaborn==0.12.2
+tqdm==4.56.0
